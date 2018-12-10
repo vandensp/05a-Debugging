@@ -307,7 +307,7 @@ def broken_6(n):
     Side effects:   None.
     """
     total = 0
-    for k in range(n + 1):
+    for k in range(n):
         total = total + 1 / (k + 1)
 
     return total
@@ -349,8 +349,8 @@ def broken_7(n, point, length, distance_between_lines, window):
         window.render(0.5)
         left = rg.Point(left.x, left.y + distance_between_lines)
         right = rg.Point(right.x, right.y + distance_between_lines)
+        
 
-    window.close_on_mouse_click()
 
 
 # -----------------------------------------------------------------------------
